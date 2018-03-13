@@ -1,20 +1,19 @@
 var MoDancer = function(top, left, timeBetweenSteps){
   Dancer.call(this, top, left, timeBetweenSteps);
-  // this.$node = $('<span class="dancer"></span>');
-  // this.top = top;
-  // this.left = left;
-  // this.timeBetweenSteps = timeBetweenSteps;
+  this.$node = $('<span class="mo"></span>');
+  this.top = 100;
+  this.left = 100;
+  this.moveMo();
 }
 
-MoDancer.prototype.step = function(){
-  setTimeout(function(){this.step()}.bind(this), this.timeBetweenSteps);
-}
+MoDancer.prototype = Object.create(Dancer.prototype);
 
-MoDancer.prototype.setPosition = function(top, left){
+MoDancer.prototype.constructor = MoDancer;
+
+MoDancer.prototype.moveMo = function(){
   var styleSettings = {
-    top: top,
-    left: left
+    top: this.top,
+    left: this.left
   };
   return this.$node.css(styleSettings);
 }
-

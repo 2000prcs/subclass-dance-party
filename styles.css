@@ -4,6 +4,7 @@ body, html{
 body{
   margin: 0px;
   background-color:#444;
+  background-image: 
   font-size: 18px;
 }
 body, a:link, a:visited, a:active{
@@ -24,4 +25,16 @@ body, a:link, a:visited, a:active{
   border:10px solid red;
   border-radius:10px;
   position:absolute;
+}
+
+.mo{
+  border: 10px solid pink;
+  border-radius:10px 100px / 120px;
+  position: absolute;
+}
+
+.ali{
+  border: 10px solid green;
+  border-radius:50% 20% / 10% 40%;
+  position: absolute;
 }

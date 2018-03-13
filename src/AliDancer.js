@@ -1,19 +1,20 @@
 var AliDancer = function(top, left, timeBetweenSteps){
   Dancer.call(this, top, left, timeBetweenSteps);
-  // this.$node = $('<span class="dancer"></span>');
-  // this.top = top;
-  // this.left = left;
-  // this.timeBetweenSteps = timeBetweenSteps;
+  this.$node = $('<span class="ali rotateOut"></span>');
+  this.top = 500;
+  this.left = 700;
+  this.moveAli();
 }
 
-AliDancer.prototype.step = function(){
-  setTimeout(function(){this.step()}.bind(this), this.timeBetweenSteps);
-}
+AliDancer.prototype = Object.create(Dancer.prototype);
 
-AliDancer.prototype.setPosition = function(top, left){
+AliDancer.prototype.constructor = AliDancer;
+
+
+AliDancer.prototype.moveAli = function(){
   var styleSettings = {
-    top: top,
-    left: left
+    top: this.top,
+    left: this.left
   };
   return this.$node.css(styleSettings);
 }
