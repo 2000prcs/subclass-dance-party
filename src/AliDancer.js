@@ -1,4 +1,4 @@
-var MoDancer = function(top, left, timeBetweenSteps){
+var AliDancer = function(top, left, timeBetweenSteps){
   Dancer.call(this, $node, top, left, timeBetweenSteps);
   // this.$node = $('<span class="dancer"></span>');
   // this.top = top;
@@ -6,15 +6,14 @@ var MoDancer = function(top, left, timeBetweenSteps){
   // this.timeBetweenSteps = timeBetweenSteps;
 }
 
-MoDancer.prototype.step = function(){
+AliDancer.prototype.step = function(){
   setTimeout(function(){this.step()}.bind(this), this.timeBetweenSteps);
 }
 
-MoDancer.prototype.setPosition = function(top, left){
+AliDancer.prototype.setPosition = function(top, left){
   var styleSettings = {
     top: top,
     left: left
   };
   return this.$node.css(styleSettings);
 }
-

@@ -18,13 +18,4 @@ Dancer.prototype.setPosition = function(top, left){
   return this.$node.css(styleSettings);
 }
 
-var mo = new Dancer();
-
-mo.prototype.edm = function(){
-}
-
-var rebecca = new Dancer();
-
-rebecca.prototype.hiphop = function(){
-}
 
