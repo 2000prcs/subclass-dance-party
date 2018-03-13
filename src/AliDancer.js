@@ -1,6 +1,6 @@
 var AliDancer = function(top, left, timeBetweenSteps){
   Dancer.call(this, top, left, timeBetweenSteps);
-  this.$node = $('<span class="ali rotateOut"></span>');
+  this.$node = $('<span class="ali animated infinite rotateOut"></span>');
   this.top = 500;
   this.left = 700;
   this.moveAli();

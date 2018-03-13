@@ -4,12 +4,16 @@ body, html{
 body{
   margin: 0px;
   background-color:#444;
-  background-image: 
+  background-image: url("universe.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
   font-size: 18px;
 }
 body, a:link, a:visited, a:active{
   color: lightblue;
 }
+
+
 .title, .addDancerButton{
   padding:5px 12px;
   float:right;
@@ -22,19 +26,19 @@ body, a:link, a:visited, a:active{
   background-color: #777;
 }
 .dancer{
-  border:10px solid red;
-  border-radius:10px;
-  position:absolute;
+  content: url("https://media.giphy.com/media/SyDYrQYuQHBlK/giphy.gif");
+  zoom: 30%;
+  position: relative;
 }
 
 .mo{
-  border: 10px solid pink;
-  border-radius:10px 100px / 120px;
-  position: absolute;
+  content: url("https://media3.giphy.com/media/QiRfE5TxPVs8o/giphy.gif");
+  zoom: 30%;
+  position: relative;
+  
 }
 
 .ali{
-  border: 10px solid green;
-  border-radius:50% 20% / 10% 40%;
-  position: absolute;
+  content: url("https://media.giphy.com/media/jan9r2g7Ygr0Q/giphy.gif");
+  position: relative;
 }

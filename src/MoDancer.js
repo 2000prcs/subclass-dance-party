@@ -1,8 +1,8 @@
 var MoDancer = function(top, left, timeBetweenSteps){
   Dancer.call(this, top, left, timeBetweenSteps);
-  this.$node = $('<span class="mo"></span>');
-  this.top = 100;
-  this.left = 100;
+  this.$node = $('<span class="mo animated infinite flip"></span>');
+  this.top = 77;
+  this.left = 400;
   this.moveMo();
 }
 
