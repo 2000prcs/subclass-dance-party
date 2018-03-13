@@ -1,5 +1,5 @@
 var MoDancer = function(top, left, timeBetweenSteps){
-  Dancer.call(this, $node, top, left, timeBetweenSteps);
+  Dancer.call(this, top, left, timeBetweenSteps);
   // this.$node = $('<span class="dancer"></span>');
   // this.top = top;
   // this.left = left;
