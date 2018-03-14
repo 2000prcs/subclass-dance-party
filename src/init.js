@@ -33,7 +33,6 @@ $(document).ready(function() {
     console.log(window.dancers);
     
   });
-  // inplementing lineup
   
   $('.lineup').on('click', function(event) {
      for(var i = 0; i < window.dancers.length; i++){
@@ -41,13 +40,15 @@ $(document).ready(function() {
       } 
   });
   
+  
   $('.interact').on('click', function(event) {
-    var distances = [];
-    for(var i = 0; i < window.dancers.length; i++){
-        //debugger;
-      Math.sqrt(Math.pow((window.dancers[i].left - window.dancers[i+1].left), 2) + 
-      Math.pow((window.dancers[i].top - window.dancers[i+1].top), 2));
-    } 
+      for(var i = 0; i < window.dancers.length; i++){
+        if(!window.dancers[i+1]){break;}
+        if((window.dancers[i].left - window.dancers[i+1].left) > 200)
+          window.dancers[i].interact();
+      } 
   });
+
+
 });
 

@@ -1,8 +1,6 @@
 var MoDancer = function(top, left, timeBetweenSteps){
   Dancer.call(this, top, left, timeBetweenSteps);
   this.$node = $('<span class="mo animated infinite flip"></span>');
-  this.top = 300;
-  this.left = 800;
   this.moveMo();
 }
 
@@ -21,8 +19,13 @@ MoDancer.prototype.moveMo = function(){
 
 MoDancer.prototype.lineUp = function(){
   var styleSettings = {
-    top: 200,
+    top: 300,
     left: 500
   };
   return this.$node.css(styleSettings);
+}
+
+
+MoDancer.prototype.interact = function(){
+  this.$node.addClass('animated fadeInDownBig');
 }

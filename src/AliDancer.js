@@ -1,8 +1,6 @@
 var AliDancer = function(top, left, timeBetweenSteps){
   Dancer.call(this, top, left, timeBetweenSteps);
   this.$node = $('<span class="ali animated infinite rotateOut"></span>');
-  this.top = 500;
-  this.left = 700;
   this.moveAli();
 }
 
@@ -22,8 +20,13 @@ AliDancer.prototype.moveAli = function(){
 
 AliDancer.prototype.lineUp = function(){
   var styleSettings = {
-    top: 200,
+    top: 300,
     left: 900
   };
   return this.$node.css(styleSettings);
+}
+
+
+AliDancer.prototype.interact = function(){
+  this.$node.addClass('animated fadeInDownBig');
 }

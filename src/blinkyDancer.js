@@ -14,8 +14,14 @@ MakeBlinkyDancer.prototype.step = function(){
 
 MakeBlinkyDancer.prototype.lineUp = function(){
   var styleSettings = {
-    top: 200,
+    top: 300,
     left: 20
   };
   return this.$node.css(styleSettings);
+}
+
+
+MakeBlinkyDancer.prototype.interact = function(){
+  console.log('interacted');
+  this.$node.addClass('animated infinite bounceOutRight');
 }
