@@ -18,3 +18,12 @@ AliDancer.prototype.moveAli = function(){
   };
   return this.$node.css(styleSettings);
 }
+
+
+AliDancer.prototype.lineUp = function(){
+  var styleSettings = {
+    top: 200,
+    left: 900
+  };
+  return this.$node.css(styleSettings);
+}

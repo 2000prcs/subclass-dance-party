@@ -29,7 +29,25 @@ $(document).ready(function() {
     );
     
     $('body').append(dancer.$node);
+    window.dancers.push(dancer);
+    console.log(window.dancers);
+    
   });
-
+  // inplementing lineup
+  
+  $('.lineup').on('click', function(event) {
+     for(var i = 0; i < window.dancers.length; i++){
+        window.dancers[i].lineUp();
+      } 
+  });
+  
+  $('.interact').on('click', function(event) {
+    var distances = [];
+    for(var i = 0; i < window.dancers.length; i++){
+        //debugger;
+      Math.sqrt(Math.pow((window.dancers[i].left - window.dancers[i+1].left), 2) + 
+      Math.pow((window.dancers[i].top - window.dancers[i+1].top), 2));
+    } 
+  });
 });
 

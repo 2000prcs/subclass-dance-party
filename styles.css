@@ -13,8 +13,7 @@ body, a:link, a:visited, a:active{
   color: lightblue;
 }
 
-
-.title, .addDancerButton{
+.title, .addDancerButton, .lineup, .interact{
   padding:5px 12px;
   float:right;
 }
@@ -28,17 +27,45 @@ body, a:link, a:visited, a:active{
 .dancer{
   content: url("https://media.giphy.com/media/SyDYrQYuQHBlK/giphy.gif");
   zoom: 30%;
+  padding: 50px;
   position: relative;
+  transition: all 2s ease-in-out;
+    -webkit-transition: all 2s ease-in-out; /** Chrome & Safari **/
+    -moz-transition: all 2s ease-in-out; /** Firefox **/
+    -o-transition: all 2s ease-in-out; /** Opera **/
 }
 
 .mo{
   content: url("https://media3.giphy.com/media/QiRfE5TxPVs8o/giphy.gif");
   zoom: 30%;
   position: relative;
+  transition: all 2s ease-in-out;
+    -webkit-transition: all 2s ease-in-out; /** Chrome & Safari **/
+    -moz-transition: all 2s ease-in-out; /** Firefox **/
+    -o-transition: all 2s ease-in-out; /** Opera **/
   
 }
 
 .ali{
   content: url("https://media.giphy.com/media/jan9r2g7Ygr0Q/giphy.gif");
+  zoom: 60%;
   position: relative;
+  transition: all 2s ease-in-out;
+    -webkit-transition: all 2s ease-in-out; /** Chrome & Safari **/
+    -moz-transition: all 2s ease-in-out; /** Firefox **/
+    -o-transition: all 2s ease-in-out; /** Opera **/
 }
+
+/** hover works only for dancer now because mo/ali doesn't get registered to DOM (it disappears)**/
+.mo:hover, .dancer:hover, .ali:hover .move-right{
+    transform: translate(1000px,0);
+    -webkit-transform: translate(1000px,0); * Chrome & Safari *
+    -o-transform: translate(1000px,0); /** Opera **/
+    -moz-transform: translate(1000px,0); /** Firefox **/
+}
+
+
+
+
+
+

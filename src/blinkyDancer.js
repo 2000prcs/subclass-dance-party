@@ -12,4 +12,10 @@ MakeBlinkyDancer.prototype.step = function(){
   this.$node.toggle();
 }
 
-
+MakeBlinkyDancer.prototype.lineUp = function(){
+  var styleSettings = {
+    top: 200,
+    left: 20
+  };
+  return this.$node.css(styleSettings);
+}
