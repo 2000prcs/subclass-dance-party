@@ -25,8 +25,8 @@ body, a:link, a:visited, a:active{
   background-color: #777;
 }
 .dancer{
-  content: url("https://media.giphy.com/media/SyDYrQYuQHBlK/giphy.gif");
-  zoom: 30%;
+  content: url("star.jpg");
+  zoom: 10%;
   padding: 50px;
   position: relative;
   transition: all 2s ease-in-out;
@@ -36,8 +36,8 @@ body, a:link, a:visited, a:active{
 }
 
 .mo{
-  content: url("https://media3.giphy.com/media/QiRfE5TxPVs8o/giphy.gif");
-  zoom: 30%;
+  content: url("cat.png");
+  zoom: 10%;
   position: relative;
   transition: all 2s ease-in-out;
     -webkit-transition: all 2s ease-in-out; /** Chrome & Safari **/
@@ -47,7 +47,7 @@ body, a:link, a:visited, a:active{
 }
 
 .ali{
-  content: url("https://media.giphy.com/media/jan9r2g7Ygr0Q/giphy.gif");
+  content: url("aladdin.png");
   zoom: 60%;
   position: relative;
   transition: all 2s ease-in-out;

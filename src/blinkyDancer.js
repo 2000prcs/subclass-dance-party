@@ -22,6 +22,5 @@ MakeBlinkyDancer.prototype.lineUp = function(){
 
 
 MakeBlinkyDancer.prototype.interact = function(){
-  console.log('interacted');
   this.$node.addClass('animated infinite bounceOutRight');
 }
